@@ -11,6 +11,19 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "GetBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -25,20 +38,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "_balance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "_owner",
+				"name": "owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -82,11 +82,11 @@
 	},
 	"sources": {
 		"contracts/EtherWallet.sol": {
-			"keccak256": "0xd5eaf39b7e639b3e017a37fb203da0f6e872a8c70ef8d42a8e17863afdb135a8",
+			"keccak256": "0x60dc1352c02a4ff73972c73cf461dc04591eefd18091f9a0990bbf8904381d46",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://348edee013432471208a5ffc9d8fadd6771e25cdbeb8612b567fa00c665e16a0",
-				"dweb:/ipfs/QmcNx87ozGczjffMsDuAi5haozbsooNThp8VGin3T2nzd3"
+				"bzz-raw://be7c00d937afc356541c1e034d95599f54fdfa19bfd4f90ce8dd796ab190acf9",
+				"dweb:/ipfs/QmZnhP67mZDz9Zb2YwZnZ1sa7xHhzs8uJEdTBhj4i3eiUe"
 			]
 		}
 	},
