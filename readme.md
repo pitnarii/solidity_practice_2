@@ -4,4 +4,6 @@ A simple wallet:
 -Showing balance
 -withdrawing
 -transaction to different wallet
+-Installment Payment with flexible duration.
  
+ Currently working on Installment Payment (BNPL) feature
