@@ -12,6 +12,8 @@ contract InstallmentPayment{
 
     enum PaymentStatus { Paid, Pending }
 
+    receive() external payable {}
+
     struct Installment {
         uint DueDate;
         PaymentStatus status;
@@ -59,10 +61,9 @@ contract InstallmentPayment{
         Installment storage installment = installments[currentPayment];
         require(installment.status == PaymentStatus.Pending, "Installment already paid");
         require(msg.value == SplitAmount, "Incorrect payment amount");
-        payable(payee).transfer(SplitAmount);
+        payable(payer).transfer(SplitAmount);
         installment.status = PaymentStatus.Paid;
         paidInstallments++;
-
     }
 
     function getInstallmentDetails(uint index) external view returns (uint DueDate, PaymentStatus status) {
